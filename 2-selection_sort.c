@@ -11,7 +11,7 @@ void selection_sort(int *array, size_t size)
 	for (i = 0; i < l; i++)
 	{
 		smallest = array[i], found_smallest = 0;
-		for (j = i; l > j - 1; j++)
+		for (j = i; l > j; j++)
 		{
 			if (array[j] < smallest)
 			{
