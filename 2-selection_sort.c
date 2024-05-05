@@ -14,13 +14,11 @@ void selection_sort(int *array, size_t size)
 		for (j = i; l > j; j++)
 		{
 			if (array[j] < array[swap_po])
-			{
 				swap_po = j;
-				smallest = array[j];
-			}
 		}
-		if (swap_po != i) 
+		if (swap_po != i)
 		{
+			smallest = array[swap_po];
 			array[swap_po] = array[i];
 			array[i] = smallest;
 			print_array(array, size);
